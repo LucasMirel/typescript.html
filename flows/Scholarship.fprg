@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Scholarship"/>
+        <attribute name="authors" value="MUHAMMAD AYDIN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-07 08:54:39 PM"/>
+        <attribute name="created" value="TVVIQU1NQUQgQVlESU47TEFQVE9QLUZPTlJKSlBUOzIwMjYtMDktMDc7MDg6MDQ6MTAgUE07MzQwNA=="/>
+        <attribute name="edited" value="TVVIQU1NQUQgQVlESU47TEFQVE9QLUZPTlJKSlBUOzIwMjYtMDktMDc7MDg6NTQ6MzkgUE07MTszNTI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name, eligible, scholarship" type="String" array="False" size=""/>
+            <declare name="gpa" type="Real" array="False" size=""/>
+            <declare name="attendance" type="Real" array="False" size=""/>
+            <input variable="name"/>
+            <input variable="gpa"/>
+            <input variable="attendance"/>
+            <if expression="gpa&gt;=3.5 AND attendance&gt;=90">
+                <then>
+                    <assign variable="eligible" expression="&quot;ELIGIBLE&quot;"/>
+                    <assign variable="scholarship" expression="&quot;FULL SCHOLARSHIP&quot;"/>
+                </then>
+                <else>
+                    <assign variable="eligible" expression="&quot;ineligible&quot;"/>
+                    <assign variable="scholarship" expression="&quot;PARTIAL SCHOLARSHIP&quot;"/>
+                </else>
+            </if>
+            <output expression="&quot;=== SHCOLARSHIP ELIGIBILITY CHECKER ===&quot;&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Student Name : &quot;&amp;name&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;&quot;GPA : &quot;&amp;gpa&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Attendance : &quot;&amp;attendance&amp;&quot;%&quot;&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Eligibility : &quot;&amp;eligible&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Scholarship : &quot;&amp;scholarship" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

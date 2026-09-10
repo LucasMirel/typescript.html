@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="BMIfixed"/>
+        <attribute name="authors" value="MUHAMMAD AYDIN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-08 10:24:30 PM"/>
+        <attribute name="created" value="TVVIQU1NQUQgQVlESU47TEFQVE9QLUZPTlJKSlBUOzIwMjYtMDktMDg7MDk6Mzc6NTkgUE07MzQyNQ=="/>
+        <attribute name="edited" value="TVVIQU1NQUQgQVlESU47TEFQVE9QLUZPTlJKSlBUOzIwMjYtMDktMDg7MTA6MjQ6MzAgUE07MTszNTEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="weight, height, bmi" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter Student Name : &quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Enter Student Weight (KG): &quot;" newline="True"/>
+            <input variable="weight"/>
+            <output expression="&quot;Enter Students Height (m): &quot;" newline="True"/>
+            <input variable="height"/>
+            <assign variable="bmi" expression="weight/(height*height)"/>
+            <output expression="&quot;=== SCHOOL CLINIC ===&quot;&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Student Name : &quot;&amp;name&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Weight : &quot;&amp;weight&amp;&quot;kg&quot;&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Height : &quot;&amp;height&amp;&quot;m&quot;&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;&quot;BMI : &quot;&amp;bmi" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

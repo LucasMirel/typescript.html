@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Award"/>
+        <attribute name="authors" value="MUHAMMAD AYDIN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-07 10:39:51 PM"/>
+        <attribute name="created" value="TVVIQU1NQUQgQVlESU47TEFQVE9QLUZPTlJKSlBUOzIwMjYtMDktMDc7MDg6NTQ6NDIgUE07MzQxNA=="/>
+        <attribute name="edited" value="TVVIQU1NQUQgQVlESU47TEFQVE9QLUZPTlJKSlBUOzIwMjYtMDktMDc7MTA6Mzk6NTEgUE07MTszNTE4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name, grade, award" type="String" array="False" size=""/>
+            <declare name="score, point" type="Integer" array="False" size=""/>
+            <declare name="attendance" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter Name : &quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Enter Final Score : &quot;" newline="True"/>
+            <input variable="score"/>
+            <output expression="&quot;Enter Attendance : &quot;" newline="True"/>
+            <input variable="attendance"/>
+            <output expression="&quot;Enter Disciplinary Points&quot;" newline="True"/>
+            <input variable="point"/>
+            <if expression="score&gt;=80==true">
+                <then>
+                    <if expression="score&gt;=90==true">
+                        <then>
+                            <assign variable="grade" expression="&quot;A&quot;"/>
+                        </then>
+                        <else>
+                            <assign variable="grade" expression="&quot;B&quot;"/>
+                        </else>
+                    </if>
+                    <if expression="score&gt;=90 AND attendance&gt;=95 AND point&lt;=0">
+                        <then>
+                            <assign variable="award" expression="&quot;BEST STUDENT AWARD&quot;"/>
+                        </then>
+                        <else>
+                            <assign variable="award" expression="&quot;HONOR ROLL&quot;"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="score&gt;=70">
+                        <then>
+                            <assign variable="grade" expression="&quot;C&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="score&gt;=60">
+                                <then>
+                                    <assign variable="grade" expression="&quot;D&quot;"/>
+                                </then>
+                                <else>
+                                    <assign variable="grade" expression="&quot;F&quot;"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <if expression="score&gt;=70 OR score&gt;=80">
+                        <then>
+                            <assign variable="award" expression="&quot;CERTIFICATE OF COMPLETION&quot;"/>
+                        </then>
+                        <else>
+                            <assign variable="award" expression="&quot;REMEDIAL NOTICE&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;=== ACADEMIC AWARD DETERMINATION SYSTEM ===&quot;&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Student Name : &quot;&amp;name&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Final Score : &quot;&amp;score&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Attendance : &quot;&amp;attendance&amp;&quot;%&quot;&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Disciplinary Points : &quot;&amp;point&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Letter Grade : &quot;&amp;grade&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Award Result : &quot;&amp;award" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="verify"/>
+        <attribute name="authors" value="MUHAMMAD AYDIN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-07 12:01:29 AM"/>
+        <attribute name="created" value="TVVIQU1NQUQgQVlESU47TEFQVE9QLUZPTlJKSlBUOzIwMjYtMDktMDY7MTE6NDM6NDkgUE07MzQxMg=="/>
+        <attribute name="edited" value="TVVIQU1NQUQgQVlESU47TEFQVE9QLUZPTlJKSlBUOzIwMjYtMDktMDc7MTI6MDE6MjkgQU07MTszNDk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="age" type="Integer" array="False" size=""/>
+            <declare name="id" type="Boolean" array="False" size=""/>
+            <input variable="name"/>
+            <input variable="age"/>
+            <input variable="id"/>
+            <assign variable="id" expression="yes == true &amp;&amp; no == false"/>
+            <if expression="id">
+                <then>
+                    <if expression="age&lt;=17==false">
+                        <then>
+                            <output expression="&quot;=== EVENT ENTRY VERIFICATION ===&quot;&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Visitor Name : &quot;&amp;name&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Age : &quot;&amp;age&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Student ID : &quot;&amp;id&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;toChar(13)&#13;&#10;&amp;&#13;&#10;&quot;Entry Status : Pass&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Denied minimal age 17&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Denied&quot;" newline="True"/>
+                </else>
+            </if>
+            <declare name="status" type="Boolean" array="False" size=""/>
+        </body>
+    </function>
+</flowgorithm>
